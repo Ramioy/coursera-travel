@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coursera Travel</title>
-    <style>
-        #logo {
-            border-radius: 50%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-            <figure>
-                <img id="logo" src="./src/images/logo.png" alt="">
-            </figure>
-        </div>
-        <div class="navbar-container">
 
-        </div>
-        <div class="searh-input-container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coursera Travel</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 
-        </div>
-    </header>
-    
-</body>
+    <body>
+        <!--Header with logo, navbar and searhbar-->
+        <header id="main-header">
+            <div id="logo-container" class="flex-centered">
+                <figure>
+                    <img id="logo" src="./src/images/logo.png" alt="coursera travel logo" title="Courser Travel">
+                </figure>
+                <h2 id="name-project">Coursera Travel</h2>
+            </div>
+            <nav class="flex-centered">
+                <ul class="spaced flex-centered">
+                    <a class="nav-item flex-centered" href="">Home</a>
+                    <a class="nav-item flex-centered" href="">About Us</a>
+                    <a class="nav-item flex-centered" href="">Contact Us</a>
+                </ul>
+            </nav>
+            <div id="searh-input-container" class="flex-centered spaced">
+                <div class="flex-centered" id="input-container">
+                    <input type="text" class="navbar-input" placeholder="Enter a destination Keyword">
+                    <figure class="flex-centered">
+                        <img id="search-icon" src="./src/images/search-icon.png" alt="search icon" title="Search">
+                    </figure>
+                </div>
+                <button class="navbar-button">Search</button>
+                <button class="navbar-button">Clear</button>
+            </div>
+        </header>
+        <!--Main content-->
+        <main>
+            <section id="section-centered" class="flex-centered">
+                <div id="title-description-container">
+                    <h1>Enjoy your journey with Coursera Travel</h1>
+                    <p>
+                        At Coursera Travel, we believe that every journey should be an unforgettable experience. From
+                        the
+                        moment you book with us, we ensure personalized service, expert guidance, and seamless planning
+                        to
+                        make your trip stress-free and memorable. Whether you're seeking a relaxing beach getaway, an
+                        adventurous mountain escape, or an immersive cultural experience, we tailor our packages to suit
+                        your needs and preferences. With exclusive deals, handpicked accommodations, and local insights,
+                        we
+                        take care of the details, so you can focus on making lasting memories. Travel with us, and let
+                        us
+                        turn your dream vacation into a reality!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
 </html>

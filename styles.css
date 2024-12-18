@@ -1,0 +1,192 @@
+/*RESET CSS -> RECOVERED FROM: https://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Project Styles*/
+
+#main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-between;
+    background-color: #fafafa;
+    padding: 10px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#logo-container {
+    border: 1px solid #fafafa;
+    padding: 5px 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+#logo-container > :not(:first-child) {
+    margin-left: 20px;
+}
+
+#name-project {
+    font-family: 'Lucida Sans';
+    font-size: larger;
+    font-weight: 600;
+}
+
+#logo {
+    border-radius: 50%;
+    height: 60px;
+    cursor: pointer;
+}
+
+#search-icon {
+    height: 35px;
+}
+
+.spaced {
+    height: 40px;
+}
+
+.spaced  > :not(:first-child) {
+    margin-left: 20px;
+}
+
+.flex-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.nav-item {
+    text-decoration: none;
+    background-color: #fafafa;
+    border-radius: 0px;
+    color: black;
+    font-family: 'Lucida Sans';
+    font-weight: 600;
+    height: 40px;
+    width: 110px;
+    transition: all;
+    animation-duration: 300ms;
+}
+
+.nav-item:hover {
+    background-color: #2f56f5;
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    color: white;
+}
+
+.search-icon {
+    border-radius: 50%;
+}
+
+.navbar-button {
+    background-color: #2f56f5;
+    color: white;
+    font-weight: 700;
+    font-family: 'Lucida Sans';
+    border: none;
+    border-radius: 20px;
+    padding: 5px 7px;
+    height: 40px;
+    width: 110px;
+    cursor: pointer;
+    transition: all;
+    animation-duration: 300ms;   
+}
+
+.navbar-button:hover {
+    background-color: #4367f7;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+#input-container {
+    background-color: white;
+    border-radius: 40px;
+    padding: 5px;
+}
+
+.navbar-input {
+   border: none;
+   outline: none;
+   height: 30px;
+   width: 200px;
+   padding: 3px 10px;
+   font-family: 'Lucida Sans';
+}
+
+#section-centered {
+    padding: 100px;
+}
+
+#title-description-container {
+    padding: 20px;
+    width: 600px;
+    font-family: 'Lucida Sans';
+}
+
+#title-description-container > h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+#title-description-container > p {
+    line-height: 25px;
+}
+
+#title-description-container > :not(:first-child) {
+    margin-top: 50px;
+}
