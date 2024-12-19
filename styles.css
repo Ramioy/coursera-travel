@@ -201,7 +201,7 @@ table {
 
 #section-centered {
     padding: 100px;
-    background-image: url(../src/images/main-image.jpg);
+    background-image: url(./src/images/main-image.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
