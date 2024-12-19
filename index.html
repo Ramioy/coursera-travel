@@ -5,7 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Coursera Travel</title>
+        <link rel="shortcut icon" href="./src/images/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
+        <script defer src="./travel_recommendation.js"></script>
     </head>
 
     <body>
@@ -19,20 +21,20 @@
             </div>
             <nav class="flex-centered">
                 <ul class="spaced flex-centered">
-                    <a class="nav-item flex-centered" href="./travel_recommendation.html">Home</a>
+                    <a class="nav-item flex-centered" href="./index.html">Home</a>
                     <a class="nav-item flex-centered" href="./about-us.html">About Us</a>
                     <a class="nav-item flex-centered" href="./contact-us.html">Contact Us</a>
                 </ul>
             </nav>
             <div id="searh-input-container" class="flex-centered spaced">
                 <div class="flex-centered" id="input-container">
-                    <input type="text" class="navbar-input" placeholder="Enter a destination Keyword">
+                    <input type="text" id="navbar-input" placeholder="Enter a destination Keyword">
                     <figure class="flex-centered">
                         <img id="search-icon" src="./src/images/search-icon.png" alt="search icon" title="Search">
                     </figure>
                 </div>
-                <button class="navbar-button">Search</button>
-                <button class="navbar-button">Clear</button>
+                <button id="search_btn" class="navbar-button">Search</button>
+                <button id="clear_btn" class="navbar-button">Clear</button>
             </div>
         </header>
         <!--Main content-->
@@ -40,16 +42,20 @@
             <section class="social-media">
                 <hr>
                 <figure>
-                    <img class="social-items" src="./src/images/twitter.svg" alt="twitter icon" title="Twitter">
+                    <a href="https://www.x.com" target="_blank"><img class="social-items" src="./src/images/twitter.svg"
+                            alt="twitter icon" title="Twitter"></a>
                 </figure>
                 <figure>
-                    <img class="social-items" src="./src/images/facebook.svg" alt="facebook icon" title="Facebook">
+                    <a href="https://www.facebook.com" target="_blank"><img class="social-items"
+                            src="./src/images/facebook.svg" alt="facebook icon" title="Facebook"></a>
                 </figure>
                 <figure>
-                    <img class="social-items" src="./src/images/instagram.svg" alt="instagram icon" title="Instagram">
+                    <a href="https://www.instagram.com" target="_blank"><img class="social-items"
+                            src="./src/images/instagram.svg" alt="instagram icon" title="Instagram"></a>
                 </figure>
                 <figure>
-                    <img class="social-items" src="./src/images/youtube.svg" alt="youtube icon" title="Youtube">
+                    <a href="https://www.youtube.com" target="_blank"><img class="social-items"
+                            src="./src/images/youtube.svg" alt="youtube icon" title="Youtube"></a>
                 </figure>
                 <hr>
             </section>
@@ -70,6 +76,10 @@
                     </p>
                     <button>Book now</button>
                 </div>
+            </section>
+
+            <section class="fetched-items">
+
             </section>
         </main>
 

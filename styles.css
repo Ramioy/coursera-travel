@@ -61,7 +61,6 @@ table {
     border: 1px solid #fafafa;
     padding: 5px 10px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    cursor: pointer;
     transition: all;
     transition-duration: 300ms;  
 }
@@ -165,7 +164,7 @@ table {
     padding: 5px;
 }
 
-.navbar-input {
+#navbar-input {
    border: none;
    outline: none;
    height: 30px;
@@ -458,4 +457,136 @@ table {
     outline: none;
     border: none;
     resize: none;
+}
+
+
+/*Cards recommendations*/
+
+.fetched-items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.fetched-items-v2 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.fetched-items > :not(:first-child) {
+    margin-left: 20px;
+}
+
+.fetched-items-v2 > :not(:first-child) {
+    margin-left: 20px;
+}
+
+
+.card-recommend {
+    display: flex;
+    font-family: 'Lucida Sans';
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    padding: 1.5rem;
+    align-items: center;
+    align-content: space-evenly;
+    border: 1px solid slategray;
+    border-radius: 17px;
+    width: 380px;
+    background-color: #fafafa;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: all;
+    transition-duration: 300ms; 
+}
+
+.card-recommend:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+
+.card-recommend > :not(:first-child) {
+    margin-top: 20px;
+}
+
+.card-recommend > .re-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1943ee;
+    text-align: center;
+}
+
+.card-recommend > .re-desc {
+    text-align: center;
+}
+
+.card-recommend > .re-button {
+    height: 35px;
+    width: 60px;
+    border-radius: 10px;
+    border: 1px solid slategrey;
+    font-size: small;
+    font-weight: 500;
+    background-color: #2f56f5;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    transition: all;
+    transition-duration: 300ms; 
+}
+
+.card-recommend > .re-button:hover {
+    background-color: #4164f0;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.country-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    background-color: rgba(24, 22, 22, 0.6);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 17px;
+}
+
+.country-cards > h4 {
+    font-family: 'Lucida Sans';
+    color: white;
+    font-size: 1.3rem;
+}
+
+.country-cards > :not(:first-child) {
+    margin-top: 20px;
+}
+
+.country-cards > span {
+    font-family: 'Lucida Sans';
+    color: white;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.img-card {
+    height: 340px;
+    min-height: 340px;
+    max-height: 340px;
+    width: 100%;
 }
