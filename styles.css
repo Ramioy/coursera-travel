@@ -61,6 +61,13 @@ table {
     border: 1px solid #fafafa;
     padding: 5px 10px;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;  
+}
+
+#logo-container:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 #logo-container > :not(:first-child) {
@@ -76,7 +83,6 @@ table {
 #logo {
     border-radius: 50%;
     height: 60px;
-    cursor: pointer;
 }
 
 #search-icon {
@@ -119,7 +125,7 @@ table {
     height: 40px;
     width: 110px;
     transition: all;
-    animation-duration: 300ms;
+    transition-duration: 300ms;   
 }
 
 .nav-item:hover {
@@ -145,7 +151,7 @@ table {
     width: 110px;
     cursor: pointer;
     transition: all;
-    animation-duration: 300ms;   
+    transition-duration: 300ms;   
 }
 
 .navbar-button:hover {
@@ -168,25 +174,175 @@ table {
    font-family: 'Lucida Sans';
 }
 
+.main-container {
+    position: relative;
+}
+
+.social-media {
+    position: absolute;
+    padding: 15px 20px;
+}
+
+.social-media > :not(:first-child) {
+    margin-top: 20px;
+}
+
+.social-items {
+    height: 40px;
+    max-height: 40px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 300ms;   
+}
+
+.social-items:hover {
+    transform: scale(1.25);
+}
+
+
 #section-centered {
     padding: 100px;
+    background-image: url(../src/images/main-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 #title-description-container {
     padding: 20px;
     width: 600px;
     font-family: 'Lucida Sans';
+    background-color: rgba(24, 22, 22, 0.7);
 }
 
 #title-description-container > h1 {
     font-weight: 700;
     font-size: 4rem;
+    color: rgb(255, 255, 255);
+    line-height: 80px;
 }
 
 #title-description-container > p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
     line-height: 25px;
 }
 
 #title-description-container > :not(:first-child) {
     margin-top: 50px;
+}
+
+#section-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    padding: 100px;
+    width: 60%;
+}
+
+#section-about > :not(:first-child) {
+    margin-top: 60px;
+}
+
+
+#section-about > h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+    line-height: 80px;
+    padding: 20px;
+    background-color: rgba(24, 22, 22, 0.43)
+}
+
+#section-about > p {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 35px;
+    width: 1100px;
+    padding: 20px;
+    background-color: rgba(24, 22, 22, 0.43)
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+
+.team-container > h2 {
+
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+
+}
+
+.team-container > :not(:first-child) {
+    margin-top: 40px;
+}
+
+.team-card {
+    padding: 20px;
+    border: 1px solid slategrey;
+    display: flex;
+    width: 350px;
+    font-family: 'Lucida Sans';
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.team-card > :not(:first-child) {
+    margin-top: 13px;
+}
+
+.team-card > h3 {
+    color: #2f56f5;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.team-card > h4 {
+    color: #2f56f5;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.team-card > p {
+    font-weight: 400;
+    text-align: center;
+}
+
+.team-card > span {
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #2f56f5;
+    width: 180px;
+    color: white;
+}
+
+.team-card > ul > li {
+    list-style: disc;
+}
+
+
+.cards-container > :not(:first-child) {
+    margin-left: 25px;
 }
